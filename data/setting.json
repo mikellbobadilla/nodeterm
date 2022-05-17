@@ -252,7 +252,9 @@
       "red": "#EF4444",
       "selectionBackground": "#3D835C",
       "white": "#CCCCCC",
-      "yellow": "#F43F5E"
+      "yellow": "#F43F5E",
+      "fontLigatures": true,
+      "fontSize": 30
     },
     {
       "background": "#000000",
