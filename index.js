@@ -1,35 +1,39 @@
-const parser = require('./controllers/commands.js')
+const { ArgumentParser } = require('argparse')
+const { version } = require('./package.json')
+const accion = require('./execute')
 
-function app() {
-  console.dir(parser)
-}
+const parser = new ArgumentParser({
+  description: 'CLI program to customize your terminal.',
+})
 
-app()
+parser.add_argument('-v', '--version', {
+  action: 'version',
+  help: 'Show version',
+  version,
+})
 
-// parser.add_argument('-v', '--version', { action: 'version', version })
-// parser.add_argument('-s', '--size', {
-//   help: 'set font size (default: 12)',
-//   type: 'int',
-// })
+parser.add_argument('-t', '--theme', {
+  type: 'str',
+  help: 'Set theme',
+})
 
-// parser.add_argument('-b', {
-//   help: 'Add a second number',
-//   type: 'int',
-//   action: 'store',
-// })
+parser.add_argument('-f', '--font', {
+  type: 'str',
+  help: 'Set font',
+})
 
-// // function num(n) {
-// //   return n
-// // }
+parser.add_argument('-o', '--opacity', {
+  type: 'float',
+  help: 'Set opacity',
+})
 
-// // process.stdin.write(parser.parse_args())
-// const arg = parser.parse_args()
+parser.add_argument('-s', '--size', {
+  type: 'int',
+  help: 'Set font size',
+})
 
-// function font({ s, size }) {
-//   return `font ${s || size || 12}`
-// }
+const args = parser.parse_args()
 
-// // console.dir(arg.a + arg.b)
-// console.log(font(arg))
+console.log(accion(args))
 
-// console.dir(h)
+// console.dir(args)
