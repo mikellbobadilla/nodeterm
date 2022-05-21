@@ -1,0 +1,26 @@
+{
+  "name": "ayu-mirage",
+
+  "background": "#202734",
+  "foreground": "#CBCCC6",
+  "black": "#191E2A",
+  "red": "#FF3333",
+  "green": "#BAE67E",
+  "yellow": "#FFA759",
+  "blue": "#73D0FF",
+  "purple": "#FFD580",
+  "cyan": "#95E6CB",
+  "white": "#C7C7C7",
+
+  "brightBlack": "#686868",
+  "brightRed": "#F27983",
+  "brightGreen": "#A6CC70",
+  "brightYellow": "#FFCC66",
+  "brightBlue": "#FFEE99",
+  "brightPurple": "#FFEE99",
+  "brightCyan": "#95E6CB",
+  "brightWhite": "#FFFFFF",
+
+  "cursorColor": "#FFFFFF",
+  "selectionBackground": "#FFFFFF"
+}
