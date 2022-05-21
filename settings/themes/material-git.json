@@ -1,0 +1,27 @@
+{
+  "name": "material-git",
+
+  "background": "#282A36",
+  "foreground": "#A8A29E",
+  
+  "black": "#0C0C0C",
+  "red": "#EF4444",
+  "green": "#4ADE80",
+  "yellow": "#F43F5E",
+  "blue": "#F472B6",
+  "purple": "#8B5CF6",
+  "cyan": "#7A96DD",
+  "white": "#CCCCCC",
+  
+  "brightBlack": "#767676",
+  "brightRed": "#E74856",
+  "brightGreen": "#0DC60C",
+  "brightYellow": "#F9F1A5",
+  "brightBlue": "#1B78FF",
+  "brightPurple": "#B4009E",
+  "brightCyan": "#61D6D6",
+  "brightWhite": "#F2F2F2",
+  
+  "cursorColor": "#F87171",
+  "selectionBackground": "#3D835C"
+}

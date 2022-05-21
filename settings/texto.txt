@@ -24,3 +24,10 @@ la opacidad se maneja en porcentaje y tiene efecto si tenes el modo transparenci
 Cuando el usuario cuando elejir un tema, el comando es "-t theme"
 el tema tiene que esta en el archivo de config de la terminal
 si no esta tiene que tomar de la carpeta settings y agregarlo a la lista y despues seleccionarlo 
+
+Features: 
+agregar alto y ancho para la terminal los comando serian:
+-w --width :    "initialRows": 15,
+-h --heigth :   "initialCols": 60,
+
+por ahora es lo que yo creo

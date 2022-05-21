@@ -32,4 +32,14 @@ parser.add_argument('-s', '--size', {
   help: 'Set font size',
 })
 
+parser.add_argument('-i','--init', {
+  help: 'Install the files required to run the program',
+  action: 'store_true',
+})
+
+parser.add_argument('-r', '--reset', {
+  help: 'Reset the settings to the default',
+  action: 'store_true',
+})
+
 module.exports = parser.parse_args()
