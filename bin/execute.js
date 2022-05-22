@@ -1,11 +1,11 @@
-const { path } = require('./util/path')
-const { readFile } = require('./util/read-file')
-const { writeFile } = require('./util/write-file')
+const { path } = require('../util/path')
+const { readFile } = require('../util/read-file')
+const { writeFile } = require('../util/write-file')
 const file = JSON.parse(readFile(path, 'utf8'))
-const { getTheme, getFonts } = require('./util/get-utils')
+const { getTheme, getFonts } = require('../util/get-utils')
 
-// get files to restore fefault settings
-const { getSettings } = require('./settings/reset/index')
+// get files to restore fefault settings 
+const { getSettings } = require('../settings/reset/index')
 
 function accion(argu) {
   if (argu.theme) {

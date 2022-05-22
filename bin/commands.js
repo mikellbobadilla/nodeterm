@@ -1,6 +1,5 @@
 const { ArgumentParser } = require('argparse')
-const { version } = require('./package.json')
-const accion = require('./execute')
+const { version } = require('../package.json')
 
 const parser = new ArgumentParser({
   description: 'CLI program to customize your terminal.',
