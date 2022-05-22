@@ -7,7 +7,7 @@
     "nodeterm": "./bin/index.js"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js"
   },
   "keywords": [
     "terminal",
@@ -24,6 +24,6 @@
   "author": "mikell bobadilla",
   "license": "ISC",
   "dependencies": {
-    "argparse": "2.0.1"
+    "argparse": "^2.0.1"
   }
 }
