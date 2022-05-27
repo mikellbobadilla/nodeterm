@@ -2,7 +2,7 @@ const { ArgumentParser } = require('argparse')
 const { version } = require('../package.json')
 
 const parser = new ArgumentParser({
-  description: 'CLI program to customize your terminal.',
+  description: 'ClI program to customize your terminal.',
 })
 
 parser.add_argument('-v', '--version', {
@@ -31,14 +31,25 @@ parser.add_argument('-s', '--size', {
   help: 'Set font size',
 })
 
-parser.add_argument('-i','--init', {
-  help: 'Install the files required to run the program',
-  action: 'store_true',
-})
-
 parser.add_argument('-r', '--reset', {
   help: 'Reset the settings to the default',
   action: 'store_true',
 })
 
+parser.add_argument('--width', {
+  type: 'int',
+  help: 'Width the window',
+})
+
+parser.add_argument('--height', {
+  type: 'int',
+  help: 'Height the window',
+})
+
+parser.add_argument('--terminal', {
+  type: 'str',
+  help: 'select a terminal will show when open the app'
+})
+
+// Returt object with arguments
 module.exports = parser.parse_args()

@@ -272,16 +272,5 @@
       "white": "#C0C0C0",
       "yellow": "#808000"
     }
-  ],
-  "themes": [
-    "Vintage",
-    "Tango Light",
-    "Tango Dark",
-    "Solarized Light",
-    "Solarized Dark",
-    "One Half Light",
-    "One Half Dark",
-    "Campbell Powershell",
-    "Campbell"
   ]
 }
