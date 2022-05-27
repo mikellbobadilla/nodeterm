@@ -1,6 +1,6 @@
 {
   "name": "nodeterm",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "CLI programs that allows you to customize the windows terminal",
   "main": "index.js",
   "bin": {
