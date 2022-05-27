@@ -1,10 +1,10 @@
 {
   "name": "nodeterm-windows",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "CLI programs that allows you to customize the windows terminal",
   "main": "index.js",
   "bin": {
-    "nodeterm": "bin/nodeterm"
+    "nodeterm": "./bin/index.js"
   },
   "scripts": {
     "start": "node bin/index.js"
@@ -31,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/mikellbobadilla/nodeterm/issues"
   },
-  "homepage": "https://github.com/mikellbobadilla/nodeterm#readme"
+  "homepage": "https://github.com/mikellbobadilla/nodeterm#readme",
+  "devDependencies": {}
 }
