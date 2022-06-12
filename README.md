@@ -1,41 +1,65 @@
-# Nodeterm
+# _Nodeterm_
 
-_CLI program that allows you to customize the windows terminal._
+Is a CLI (command line interface) what allows to modify the **Windows Terminal**.
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/)
-- [windows terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=US)
+- [Node.js (v16.15.0 or +)](https://nodejs.org/en/)
+- [npm (v8.5.5)](https://www.npmjs.com/)
+- [Windows Terminal (estable release)](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=US)
 
-## Get Started 🚀
+## Installation
 
-_Run this command to install the CLI:_
+Run this command to install:
 
-```
-$ npm install -g nodeterm
-```
-
-#### If you want reset the themes
-
-Run this command to reset the themes.
-
-```
-$ nodeterm --reset
+```bash
+npm install -g nodeterm-windows
 ```
 
-#### There themes preinstalled
+If can't running scipts on **Power Shell** try this command:
+
+```bash
+Set-ExecutionPolicy Unrestricted
+```
+
+You can restore the default settings running this command:
+
+```bash
+nodeterm --reset
+```
+
+## Things Pre-Installed
+
+If need add more themes, seet the file **settings/**
+
+**Themes:**
 
 - ayu-dark
 - ayu-mirage
 - dracula
 - material-git
 
-You can add more themes to the "themes" folder. The .json file and the theme must have the same name so you can identify it.
-Windows Terminal uses this scheme:
+**Fonts**
+Only can set if are installed on the computer
 
+See the JSON file **settings/fonts.json**
+
+```json
+{
+  "cascadia-code": "Cascadia Code",
+  "cobalt": "Cobalt",
+  "ubuntu-mono": "UbuntuMono Nerd Font",
+  "caskaydia": "CaskaydiaCove Nerd Font Mono",
+  "consolas": "Consolas"
+}
 ```
 
+Only need to write the key to set the font, the program use to value to set the font.
+
+If you need to add more themes, please, see the file **settings/themes.json**
+The scheme what use **Windows Terminal** is this:.
+
+```json
 {
   "name": "ayu-dark",
 
@@ -63,27 +87,22 @@ Windows Terminal uses this scheme:
   "cursorColor": "#FFFFFF",
   "selectionBackground": "#FFFFFF"
 }
-
 ```
 
-### Command what you can do
+## Commands and Options
 
-```
-$ nodeterm -t --theme dracula
+| Command                             | Description              |
+| ----------------------------------- | ------------------------ |
+| `nodeterm`                          | Run the program          |
+| `nodeterm --help`                   | Show the help            |
+| `nodeterm --version`                | Show the version         |
+| `nodeterm --reset`                  | Reset the settings       |
+| `nodeterm --font -f <font>`         | Set the font             |
+| `nodeterm --theme -t <theme>`       | Set the theme            |
+| `nodeterm --size -s <size>`         | Set the font size        |
+| `nodeterm --opacity -o <opacity>`   | Set the opacity          |
+| `nodeterm --width <width>`          | Set the window width     |
+| `nodeterm --height <height>`        | Set the window height    |
+| `nodeterm --terminal <terminaName>` | Set the default terminal |
 
-$ nodeterm -s --size 20
-
-$nodeterm -o --opacity 90
-
-$nodeterm -f --font 'cascadia-code' // only use font installed
-```
-
-## new Features
-
-```
-$ nodeterm --width [int]
-
-$ nodeterm --height [int]
-
-$nodeterm --terminal 'Git Bash'
-```
+**I'm thinking more features see you soom :)**
